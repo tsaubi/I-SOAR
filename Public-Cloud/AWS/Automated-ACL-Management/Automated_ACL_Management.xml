@@ -54,9 +54,14 @@
     <compensation/>
     <allowSchedule>false</allowSchedule>
     <type>CREATE</type>
-    <task name="Task_select_ACL.php">
+    
+  <task name="Task_select_ACL.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
       <displayName>select ACL</displayName>
+    </task>
+    <task name="Task_microservice_synchronization.php">
+      <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
+      <displayName>microservice synchronization</displayName>
     </task>
   </process>
 <process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_delete">
