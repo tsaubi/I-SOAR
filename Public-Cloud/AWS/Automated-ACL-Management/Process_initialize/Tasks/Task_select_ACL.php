@@ -12,7 +12,6 @@ function list_args()
 {
   create_var_def('aws_region', 'String');
   create_var_def('vpc_id', 'String');
-  create_var_def('url_IP_provider', 'String');
 }
 
 task_success('Task OK');

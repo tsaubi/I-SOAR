@@ -33,17 +33,14 @@
       </classes>
     </variable>
     <variable displayName="Url Ip Provider" displayOrder="3" maxLength="100" name="params.url_IP_provider" numberOfRowMax="0" startIncrement="0" tableSizeFix="false" type="String">
+      <values>
+        <value>http://localhost/demo/isoar/IP_list_2.txt</value>
+        <value>http://localhost/demo/isoar/IP_list_1.txt</value>
+        <value>http://localhost/demo/isoar/long_IP_list.txt</value>
+      </values>
       <sections>
         <section>select ACL</section>
       </sections>
-    </variable>
-    <variable displayName="Network Acl Id" displayOrder="4" isMandatory="true" maxLength="100" name="params.network_acl_id" numberOfRowMax="0" refDeviceIdVar="params.aws_region" startIncrement="0" tableSizeFix="false" type="OBMFRef">
-      <sections>
-        <section>select ACL</section>
-      </sections>
-      <classes>
-        <class>network_acl</class>
-      </classes>
     </variable>
   </variables>  <example>    <content/>  </example>
 <process name="Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize">
@@ -55,9 +52,11 @@
     <allowSchedule>false</allowSchedule>
     <type>CREATE</type>
     
+  
+    
   <task name="Task_select_ACL.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>
-      <displayName>select ACL</displayName>
+      <displayName>select VPC</displayName>
     </task>
     <task name="Task_microservice_synchronization.php">
       <processPath>/opt/fmc_repository/Process/I-SOAR/Public-Cloud/AWS/Automated-ACL-Management/Process_initialize/Tasks/</processPath>

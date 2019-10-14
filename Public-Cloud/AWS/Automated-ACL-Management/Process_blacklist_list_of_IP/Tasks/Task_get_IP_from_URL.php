@@ -3,7 +3,8 @@ require_once '/opt/fmc_repository/Process/Reference/Common/common.php';
 
 function list_args()
 {
-  }
+  create_var_def('url_IP_provider', 'String');
+}
 
 $ip_list_string = '';
 $context['ip_list_string'] = '';
