@@ -1,4 +1,4 @@
 # I-SOAR
-Security Orchestration Automation
+Integrated Security Orchestration Automation and Response
 
 
